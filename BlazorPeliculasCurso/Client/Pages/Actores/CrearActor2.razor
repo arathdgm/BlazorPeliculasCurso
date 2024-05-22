@@ -1,0 +1,28 @@
+﻿@page "/actores/add"
+@inject NavigationManager nav
+@inject IRepositorio repositorio
+@inject SweetAlertService swal
+
+<h3>Crear Actores</h3>
+
+<FormActores2 OnValidSubmit="Insert" Actor="model" />
+
+@code {
+    private Actor model = new Actor();
+
+    public async Task Insert()
+    {
+        var httpResponse = await repositorio.Post("api/actores", model);
+
+        if (httpResponse.Error)
+        {
+            var mensajeError = await httpResponse.ObtenerMensajeError();
+            await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+        }
+        else
+        {
+            // await swal.FireAsync("Exitoso", $"El genero {Actor.Nombre} ha sido agregado correctamente.", SweetAlertIcon.Success);
+            nav.NavigateTo("actores");
+        }
+    }
+}

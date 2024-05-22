@@ -1,0 +1,159 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazorPeliculasCurso.Client
+build_property.RootNamespace = BlazorPeliculasCurso.Client
+build_property.ProjectDir = C:\Users\sistemas2\Desktop\cursC#\BlazorPeliculasCurso\BlazorPeliculasCurso\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\sistemas2\Desktop\cursC#\BlazorPeliculasCurso\BlazorPeliculasCurso\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Actores/AddActor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xBZGRBY3Rvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Actores/FormActores.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xGb3JtQWN0b3Jlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Actores/IndiceActores.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xJbmRpY2VBY3RvcmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Actores/ModifyActor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xNb2RpZnlBY3Rvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Generos/AddGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvc1xBZGRHZW5lcm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Generos/FormGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvc1xGb3JtR2VuZXJvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Generos/IndiceGeneros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvc1xJbmRpY2VHZW5lcm9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Generos/ModifyGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvc1xNb2RpZnlHZW5lcm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Peliculas/AddPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEFkZFBlbGljdWxhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Peliculas/FiltroPeliculas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEZpbHRyb1BlbGljdWxhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Peliculas/FormPeliculas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEZvcm1QZWxpY3VsYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Peliculas/ModifyPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXE1vZGlmeVBlbGljdWxhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Peliculas/ViewPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXFZpZXdQZWxpY3VsYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/BindAfterDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJpbmRBZnRlckRlbW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/BindEvento.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJpbmRFdmVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/BindGetSetDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJpbmRHZXRTZXREZW1vLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/CustomPageNotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVBhZ2VOb3RGb3VuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/EjemploTextbox.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVqZW1wbG9UZXh0Ym94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/InputImg.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXElucHV0SW1nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/InputMarkdown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXElucHV0TWFya2Rvd24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/ListadoGenerico.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9HZW5lcmljby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/ListadoPeliculas.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9QZWxpY3VsYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/MostrarMarkdown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1vc3RyYXJNYXJrZG93bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/PeliculaIndividual.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBlbGljdWxhSW5kaXZpZHVhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/SelectorMultiple.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlbGVjdG9yTXVsdGlwbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/SelectorMultipleTypeahead.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlbGVjdG9yTXVsdGlwbGVUeXBlYWhlYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mtmwxeixnf
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6wcpkrq1q2
+
+[C:/Users/sistemas2/Desktop/cursC\#/BlazorPeliculasCurso/BlazorPeliculasCurso/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4grk8676hs

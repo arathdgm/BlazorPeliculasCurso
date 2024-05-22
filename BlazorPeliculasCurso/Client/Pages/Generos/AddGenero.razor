@@ -1,0 +1,33 @@
+﻿@page "/generos/add"
+@inject NavigationManager nav
+@inject IRepositorio repositorio
+@inject SweetAlertService swal
+
+<h3>Generos</h3>
+
+<FormGenero @ref="formGenero" Genero="Genero" OnValidSubmit="Crear"></FormGenero>
+
+@code {
+
+    private Genero Genero = new Genero();
+    private FormGenero? formGenero;     
+
+
+    private async Task Crear()
+    {
+        var httpResponse = await repositorio.Post("api/genero", Genero);
+
+        if (httpResponse.Error)
+        {
+            var mensajeError = await httpResponse.ObtenerMensajeError();
+            await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+        }else
+        {
+            formGenero!.formPosteadoExitoso = true;
+            await swal.FireAsync("Exitoso", $"El genero {Genero.Nombre} ha sido agregado correctamente.", SweetAlertIcon.Success);
+            nav.NavigateTo("generos");
+        }
+
+    }
+
+   }

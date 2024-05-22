@@ -1,0 +1,65 @@
+﻿@inject SweetAlertService swal
+
+<NavigationLock OnBeforeInternalNavigation="OnBeforeNavigation"></NavigationLock>
+<EditForm EditContext="editContext" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Genero.Nombre"></InputText>
+            <ValidationMessage For="@(()=> Genero.Nombre)"></ValidationMessage>
+        </div>
+    </div>
+
+    <button class="btn btn-success" type="submit">Guardar</button>
+    <a class="btn btn-danger" href="generos">Regresar</a>
+</EditForm>
+
+@code 
+{
+
+    private EditContext editContext = null!;
+
+    protected override void OnInitialized()
+    {
+        editContext = new(Genero);
+    }
+
+    [EditorRequired][Parameter] public Genero Genero { get; set; } = null!;
+    [EditorRequired][Parameter] public EventCallback OnValidSubmit { get; set; }
+    public bool formPosteadoExitoso { get; set; } = false;
+
+    private async Task OnBeforeNavigation(LocationChangingContext context)
+    {
+        var formEditado = editContext.IsModified();
+
+        if (!formEditado)
+        {
+            return;
+        }
+
+        if (formPosteadoExitoso)
+        {
+            return;   
+        }
+
+        var resultado = await swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Confirmación",
+                Text = "¿Deseas abandonar sin guardar?",
+                Icon = SweetAlertIcon.Warning,
+                ShowCancelButton = true,
+            });
+
+        var confirm = !string.IsNullOrEmpty(resultado.Value);      
+
+        if (confirm)
+        {
+            return;
+        }
+
+        context.PreventNavigation();
+        
+    }
+}
+

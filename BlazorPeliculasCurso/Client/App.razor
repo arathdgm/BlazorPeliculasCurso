@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Services
+@using System.Reflection
+@inject LazyAssemblyLoader lazyLoader
+
+<Router AppAssembly="@typeof(App).Assembly"
+OnNavigateAsync="OnNavigateAsync"
+AdditionalAssemblies="assemblies"
+>
+   @*Found es un componente que se usa cuando la ruta sea encontrada*@
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        @*FocusOnNavigate sirve para hacer focus en un elemento de la pagina, ayuda que los dispositivos se enfoquen en un elenmento*@
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    @*Se ejecuta NotFound cuando no se encuentra la ruta*@
+    <NotFound>
+        @*Se renderiza lo que coloquemos*@
+        <PageTitle>No encontrado.</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">Lo sentimos, la pagina solicitada no se encuentra disponible.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
+
+
+@code{
+    private List<Assembly> assemblies = new List<Assembly>();
+
+    private async Task OnNavigateAsync (NavigationContext args){
+        if (args.Path.EndsWith("counter"))
+        {
+            var assembliesLoad = await lazyLoader.LoadAssembliesAsync(
+            new List<string> { "MathNet.Numerics.dll" }
+            );
+            assemblies.AddRange(assembliesLoad);
+        }
+    }
+}

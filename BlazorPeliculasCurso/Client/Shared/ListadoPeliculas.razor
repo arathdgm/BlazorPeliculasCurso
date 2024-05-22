@@ -1,0 +1,35 @@
+﻿@inject SweetAlertService swal
+
+<div style="display: flex; flex-wrap: wrap; align-items: center">
+    <ListadoGenerico Listado="Peliculas">
+        <HayRegistros Context="pelicula">
+            <PeliculaIndividual Pelicula="pelicula" EliminaPelicula="EliminaPelicula"></PeliculaIndividual>
+        </HayRegistros>
+    </ListadoGenerico>
+</div>
+
+
+@code
+{
+    [Parameter][EditorRequired] public List<Pelicula> Peliculas { get; set; } = null!;
+
+    private async Task EliminaPelicula(Pelicula pelicula)
+    {
+        var result = await swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Confirmación",
+                Text = $"¿Desea eliminar la pelicula: {pelicula.Titulo}?",
+                Icon = SweetAlertIcon.Warning,
+                ShowCancelButton = true
+            });
+
+        var confirmacion = !string.IsNullOrEmpty(result.Value);
+
+        if (confirmacion)
+        {
+            await swal.FireAsync("Exitoso",$"{pelicula.Titulo} ha sido eliminada de la lista.", SweetAlertIcon.Success);
+            Console.WriteLine("Eliminando pelicula...");
+            Peliculas!.Remove(pelicula);
+        }
+    }
+}

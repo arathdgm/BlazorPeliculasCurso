@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SeXa58cEv9u5HFK28f9Eqs2cZoWqHuqB9/ynFw4hPhMh2/BE3fFJ20/gclI52zTi41fXiNtEV/ylUexD2DOkNg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sistemas2\\Desktop\\cursC#\\BlazorPeliculasCurso\\BlazorPeliculasCurso\\Shared\\BlazorPeliculasCurso.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sistemas2\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\sistemas2\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\sistemas2\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

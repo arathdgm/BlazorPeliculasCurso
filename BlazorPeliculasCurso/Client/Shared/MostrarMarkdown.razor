@@ -1,0 +1,31 @@
+﻿@using Markdig
+
+@if (string.IsNullOrEmpty(ContenidoHTML))
+{
+    if (PlantillaCarga is not null)
+    {
+        @PlantillaCarga
+    }
+}
+else
+{
+    //con markupstring permite tomamr contenido HTML y renderizarlo
+    @((MarkupString)ContenidoHTML)
+}
+
+@code {
+    [Parameter] public string? ContenidoMarkdown { get; set; }
+    //para colocar que se visualizara cuando se renderice el texto
+    [Parameter] public RenderFragment PlantillaCarga { get; set; } = null!;
+    //este es el markdown convertido a HTML para mostrarlo al usuario
+    private string? ContenidoHTML;
+
+    //Se ejecuta cada que se cambia el contenido del markdown (ContenidoMarkdown)
+    protected override void OnParametersSet()
+    {
+        if (ContenidoMarkdown is not null)
+        {
+            ContenidoHTML = Markdown.ToHtml(ContenidoMarkdown);
+        }
+    }
+}

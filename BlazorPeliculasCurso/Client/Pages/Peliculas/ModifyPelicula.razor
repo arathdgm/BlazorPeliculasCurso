@@ -1,0 +1,40 @@
+﻿@page "/peliculas/modify/{IdPelicula:int}"
+
+
+<h3>Modify Pelicula</h3>
+
+<FormPeliculas Pelicula="Pelicula" OnValidSubmit="Editar"
+    GenerosNoSeleccionados="GenerosNoSeleccionados" GenerosSeleccionados="GenerosSeleccionados"></FormPeliculas>
+
+@code {
+    [Parameter] public int IdPelicula { get; set; }
+
+    Pelicula Pelicula = new Pelicula ();
+    private List<Genero> GenerosNoSeleccionados = new List<Genero>();
+    private List<Genero> GenerosSeleccionados = new List<Genero>();
+
+    protected override void OnInitialized()
+    {
+        Pelicula = new Pelicula
+        {
+            Id=IdPelicula, Titulo="Mi Peli"
+        };
+
+        GenerosNoSeleccionados = new List<Genero>()
+        {
+            new Genero (){Id = 1, Nombre = "Comedia"},
+            new Genero (){Id = 3, Nombre = "Acción"},
+            new Genero (){Id = 4, Nombre = "Sci-fi"}
+        };
+
+        GenerosSeleccionados = new List<Genero>()
+        {
+            new Genero (){Id = 2, Nombre = "Drama"}
+        };
+    }
+
+    private void Editar()
+    {
+        Console.WriteLine("Editando pelicula...");
+    }
+}
